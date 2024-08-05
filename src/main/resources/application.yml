@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: anonimChat
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+  datasource:
+    url: jdbc:postgresql://localhost:5432/anonimChat
+    username: postgres
+    password: komka123
+    hikari:
+      auto-commit: false
+  flyway:
+    baseline-on-migrate: true
+  main:
+    allow-circular-references: false
